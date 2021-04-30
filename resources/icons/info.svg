@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11.591" height="11.657" viewBox="0 0 11.591 11.657">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255, 255, 255, 0);
+        stroke: #231f20;
+        stroke-width: 0.8px;
+      }
+
+      #info:hover .cls-1{
+        stroke-width: 0.9px;
+      }
+    </style>
+  </defs>
+  <g id="info" >
+    <g id="Ellipse_5" data-name="Ellipse 5" class="cls-2">
+      <ellipse class="cls-1" cx="5.795" cy="5.829" rx="5.395" ry="5.429"/>
+    </g>
+    <g id="Group_94" data-name="Group 94" transform="translate(5.795 3.336)">
+      <line id="Line_10" data-name="Line 10" class="cls-1" y1="3.323" transform="translate(0 1.662)"/>
+      <line id="Line_11" data-name="Line 11" class="cls-1" y1="0.831"/>
+    </g>
+  </g>
+</svg>

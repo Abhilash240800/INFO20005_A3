@@ -1,0 +1,21 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16.878" height="26.365" viewBox="0 0 16.878 26.365" class="test">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #231f20;
+        stroke-linecap: round;
+        stroke-width: 1px;
+      }
+      g:hover .cls-1{
+          stroke-width: 2px;
+        }
+      }
+    </style>
+  </defs>
+  <g id="right_Arrow" data-name="right Arrow" transform="translate(15.469 1.409) rotate(90)">
+    <line id="Line_8" data-name="Line 8" class  = "cls-1" x2="18.317" transform="translate(11.774 0) rotate(50)"/>
+    <line id="Line_9" data-name="Line 9" class  = "cls-1" x2="18.317" transform="translate(11.774 0.029) rotate(130)"/>
+  </g>
+</svg>
