@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;700&display=swap');
+:root {
+    --font-display: 'Bebas Neue', cursive;
+    --font-text: 'Roboto Slab', serif;
+    /* 
+    Type scale (Golden ratio Geometric progression)
+     */
+    --text-base-size: 1rem;
+    --text-scale-ratio: 1.618;
+    --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-sm: calc(1em / var(--text-scale-ratio));
+    --text-md: calc(1em * var(--text-scale-ratio));
+    --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxl: calc( 1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxxl: calc( 1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    /* 
+    Spacing scale (Fibbonaci Increments)
+     */
+    --baseline: 24px;
+    --space-xxs: 0.25em;
+    --space-xs: 0.5em;
+    --space-sm: 0.75em;
+    --space-md: 1.25em;
+    --space-lg: 2em;
+    --space-xl: 3.25em;
+    --space-xxl: 5.25em;
+    --space-xxxl: 8.5em;
+    /*
+    Color
+    */
+    --color-display: var(--color-primary-dark);
+    --color-text-heading: var(--color-primary-dark);
+    --color-text-subheading: var(--color-primary-light);
+    --color-text-primary: var(--gray-5);
+    --color-text-secondary: var(--gray-3);
+    --color-text-accent: var(--color-secondary);
+    --color-link: var(--black);
+    /*
+   line height
+   */
+    --heading-line-height: 1.2;
+    --body-line-height: 1.4;
+}
+
+body {
+    font-family: var(--font-text);
+    font-size: var(--text-base-size);
+}
+
+h1 {
+    font-size: var(--text-xxl);
+    text-transform: uppercase;
+    color: var(--color-display);
+    font-family: var(--font-display);
+    letter-spacing: var(--space-xxs);
+}
+
+h2 {
+    font-size: var(--text-xl);
+    text-transform: uppercase;
+    color: var(--color-text-heading);
+    font-family: var(--font-display);
+    letter-spacing: var(--space-xxs);
+}
+
+h3 {
+    font-size: var(--text-lg);
+    text-transform: uppercase;
+    color: var(--color-text-subheading);
+    font-family: var(--font-text);
+    font-weight: 500;
+}
+
+p {
+    font-weight: 300;
+    font-size: var(--text-md);
+}
+
+
+/* ul,
+  ul li{
+     margin-left: 0.8em;
+     padding: 0;
+     text-indent: 0;
+     font-weight: 300;
+     font-size: var(--text-md);
+  
+  }
+  
+  ul{
+    margin-bottom: 1em;
+    border-left: solid var(--color-secondary) 5px;
+  }
+  
+  li + li{
+    margin-top: 0.6em;
+  }
+  */
