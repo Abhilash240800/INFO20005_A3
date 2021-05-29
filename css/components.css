@@ -1,8 +1,50 @@
-.btn-primary {
-    border: 1px solid black;
-    display: block;
-}
-
-.btn-primary p {
-    color: red;
-}
+    .btn-primary {
+        border: 1px solid black;
+        display: block;
+    }
+    
+    .btn-primary p {
+        color: red;
+    }
+    
+    .logo {
+        width: 132.6px;
+    }
+    
+    .logo:hover {
+        width: 142.6px;
+        margin-right: -10px;
+    }
+    
+    .nav li {
+        display: inline-block;
+        font-size: var(--text-sm);
+    }
+    
+    .nav li:not(:first-child) {
+        margin-left: var(--space-md);
+    }
+    
+    .nav li a {
+        color: var(--color-link);
+        text-decoration: none;
+    }
+    
+    .nav li a:hover {
+        font-weight: 500;
+        text-decoration: underline;
+    }
+    
+    .icon-group .icon:not(:first-child) {
+        margin-left: var(--space-sm);
+    }
+    
+    .product-image {
+        transform: rotate(-83.25deg);
+    }
+    
+    .product-stars object {
+        transform: scale(25%);
+    }
+    
+    .product-stars object:not(:first-child) {}

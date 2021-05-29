@@ -1,0 +1,8 @@
+.bmg-title {
+    line-height: var(--space-xl);
+    text-align: center;
+}
+
+.bmg-title span {
+    font-size: var(--text-sm);
+}

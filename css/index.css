@@ -1,4 +1,5 @@
 @import url(./reset.css);
-@import url(./colour.css);
 @import url(./typography.css);
 @import url(./components.css);
+@import url(./animations.css);
+@import url(./color.css);

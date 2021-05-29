@@ -7,7 +7,7 @@
     Type scale (Golden ratio Geometric progression)
      */
     --text-base-size: 1rem;
-    --text-scale-ratio: 1.618;
+    --text-scale-ratio: 1.2;
     --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
     --text-sm: calc(1em / var(--text-scale-ratio));
     --text-md: calc(1em * var(--text-scale-ratio));
@@ -76,6 +76,12 @@ h3 {
 p {
     font-weight: 300;
     font-size: var(--text-md);
+}
+
+a {
+    text-decoration: none;
+    font-size: var(--text-md);
+    font-weight: 300;
 }
 
 

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.173" height="20.823" viewBox="0 0 21.173 20.823">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #231f20;
+        stroke-width: 0.8px;
+        stroke-linejoin: round;
+      }
+
+      #Basket:hover #Path_49 {
+         fill: #231f20;
+      }
+    </style>
+  </defs>
+  <g id="Basket" transform="translate(0.4 0.423)">
+    <path id="Path_1" data-name="Path 1" class="cls-1" d="M7123.084-1882.135h0l4.611,11.646h11.631l4.131-11.646h-20.373Z" transform="translate(-7123.084 1890.489)"/>
+    <path id="Path_2" data-name="Path 2" class="cls-1" d="M7129-1880.564c4.61-18.9,9.943-.4,9.943-.4" transform="translate(-7123.785 1889.068)"/>
+    <path id="Path_49" data-name="Path 49" class="cls-1" d="M7123.085-1882.135h0l2.927,7.393h7.383l2.623-7.393h-12.933Z" transform="translate(-7119.365 1892.615)"/>
+  </g>
+</svg>
