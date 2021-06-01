@@ -17,3 +17,32 @@
      transition: font-weight 0.3s, text-decoration 0.3s;
      transition-timing-function: ease-out;
  }
+ 
+ @-webkit-keyframes move {
+     from {
+         left: 0;
+     }
+     to {
+         left: 1300px;
+     }
+ }
+ 
+ @-webkit-keyframes move-backfill {
+     from {
+         left: -1300px;
+     }
+     to {
+         left: 0;
+     }
+ }
+ 
+ .animate-artist-collection {
+     position: absolute;
+     animation: move 15s linear 0s infinite;
+ }
+ 
+ .animate-artist-collection-backfill {
+     position: absolute;
+     left: -1300px;
+     animation: move-backfill 15s linear 0s infinite;
+ }

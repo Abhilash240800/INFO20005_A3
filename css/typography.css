@@ -6,7 +6,7 @@
     /* 
     Type scale (Golden ratio Geometric progression)
      */
-    --text-base-size: 1rem;
+    --text-base-size: 1.66vh;
     --text-scale-ratio: 1.2;
     --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
     --text-sm: calc(1em / var(--text-scale-ratio));
@@ -18,8 +18,7 @@
     /* 
     Spacing scale (Fibbonaci Increments)
      */
-    --baseline: 24px;
-    --space-xxs: 0.25em;
+    --baseline: 1.8vw --space-xxs: 0.25em;
     --space-xs: 0.5em;
     --space-sm: 0.75em;
     --space-md: 1.25em;

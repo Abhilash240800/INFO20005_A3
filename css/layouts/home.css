@@ -1,21 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: grid;
     grid-template-areas: "header" "main" "artists" "footer";
-    grid-template-rows: 10vh 80vh 10vh auto;
+    grid-template-rows: 10vh 75vh 15vh auto;
     grid-template-columns: 100%;
     gap: var(--space-md);
-    margin-top: var(--space-md);
-    margin-bottom: var(--space-md);
+}
+
+body>*:not(:first-child) {
+    margin-left: var(--space-md);
+    margin-right: var(--space-md);
 }
 
 #bmg-main {
     grid-area: "main";
-    display: grid;
-    grid-template-areas: "hero" "feature";
-    grid-template-rows: 100%;
-    grid-template-columns: 50vw 50vw;
-    justify-items: center;
-    gap: var(--space-md);
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .bmg-header {
@@ -25,40 +31,127 @@ body {
     justify-content: space-between;
     align-items: top;
     height: max-content;
+    margin-top: var(--space-md);
+}
+
+.bmg-header .nav {
+    margin-right: var(--space-xl);
 }
 
 .bmg-hero {
-    grid-area: "hero";
-    margin: var(--space-md);
+    margin-top: var(--space-md);
+    margin-left: var(--space-xxl);
 }
 
 .bmg-image img {
-    width: 370px;
+    width: 25vw;
     margin-top: var(--space-xxl);
 }
 
 .bmg-feature {
-    grid-area: "hero";
+    margin-top: var(--space-md);
+    margin-left: calc(2*var(--space-xxxl));
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 30vw;
+    height: 75vh;
     align-items: center;
-    margin: var(--space-md);
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.bmg-feature .product-info-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--space-lg);
 }
 
 .bmg-feature .product-image {
-    width: 300px;
+    width: 30vw;
+    border: 1px solid red;
 }
 
 .bmg-feature .product-image:hover {
-    width: 310px;
-    margin-right: -10px;
+    width: 31vw;
 }
 
-.bmg-feature .product-ratings {
+.bmg-artists {
+    grid-area: "artists";
+    position: relative;
+    overflow: hidden;
+    left: calc(-1*var(--space-md));
+    width: 100vw;
+    margin-top: var(--space-md)
+}
+
+.bmg-footer {
+    grid-area: "footer";
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    width: 72vw;
+    border: 1px solid red;
+    justify-content: space-between;
+}
+
+.bmg-footer .footer-links {
     align-items: center;
+    justify-content: space-evenly;
+    width: 30vw;
+    margin-right: var(--space-xxxl);
+}
+
+.bg-quad-1 {
+    border-bottom: 100vh solid var(--color-primary-bg);
+    border-right: calc((100vw - (20vw + 52vw + var(--space-xxl) + 2*var(--space-xxxl)))*0.75) solid transparent;
+    height: 100vh;
+    width: 20vw;
+    transform: rotateX(180deg);
+}
+
+.bg-quad-2 {
+    margin-left: var(--space-xxl);
+    border-bottom: 100vh solid var(--color-primary-bg);
+    border-right: calc((100vw - (20vw + 52vw + var(--space-xxl) + 2*var(--space-xxxl)))*0.75) solid transparent;
+    border-left: calc((100vw - (20vw + 52vw + var(--space-xxl) + 2*var(--space-xxxl)))*0.75) solid transparent;
+    height: 100vh;
+    width: 52vw;
+}
+
+.bg-quad-3 {
+    margin-left: calc(2*var(--space-xxxl));
+    border-bottom: 100vh solid var(--color-primary-bg);
+    border-left: calc((100vw - (20vw + 52vw + var(--space-xxl) + 2*var(--space-xxxl)))*0.75) solid transparent;
+    height: 100vh;
+    width: calc(100vw - (20vw + 52vw + var(--space-xxl) + 2*var(--space-xxxl)));
+    transform: rotateX(180deg);
+}
+
+.bg-quad-4 {
+    border-bottom: 21vh solid var(--color-primary-bg);
+    border-right: calc((100vw - (20vw + 52vw + var(--space-xxl) + 2*var(--space-xxxl)))*0.75) solid transparent;
+    height: 21vh;
+    width: 20vw;
+}
+
+.bg-quad-5 {
+    margin-left: var(--space-xxl);
+    border-bottom: 21vh solid var(--color-primary-bg);
+    border-right: calc((100vw - (20vw + 52vw + var(--space-xxl) + 2*var(--space-xxxl)))*0.75) solid transparent;
+    border-left: calc((100vw - (20vw + 52vw + var(--space-xxl) + 2*var(--space-xxxl)))*0.75) solid transparent;
+    height: 21vh;
+    width: 52vw;
+    transform: rotateX(180deg);
+}
+
+.bg-quad-6 {
+    margin-left: calc(2*var(--space-xxxl));
+    border-bottom: 21vh solid var(--color-primary-bg);
+    border-left: calc((100vw - (20vw + 52vw + var(--space-xxl) + 2*var(--space-xxxl)))*0.75) solid transparent;
+    height: 21vh;
+    width: calc(100vw - (20vw + 52vw + var(--space-xxl) + 2*var(--space-xxxl)));
 }
