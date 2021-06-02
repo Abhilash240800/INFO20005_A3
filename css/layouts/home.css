@@ -19,13 +19,6 @@ body>*:not(:first-child) {
     grid-area: "header";
     grid-row: 1;
     grid-column: 1 / 3;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: top;
-    height: max-content;
-    margin-top: var(--space-md);
 }
 
 .bmg-header .nav {
