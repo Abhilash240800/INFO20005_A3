@@ -1,8 +1,16 @@
 .bmg-title {
     line-height: var(--space-xl);
     text-align: center;
+    font-family: var(--font-display), sans-serif;
+    font-size: var(--text-lg);
 }
 
 .bmg-title span {
-    font-size: var(--text-sm);
+    font-size: var(--text-lg);
+}
+
+.bmg-footer .footer-links {
+    font-family: var(--font-display), sans-serif;
+    font-size: var(--text-lg);
+    letter-spacing: var(--space-xxs);
 }
