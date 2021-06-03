@@ -28,10 +28,7 @@
     letter-spacing: var(--space-xxs);
 }
 
-.scroll-down h1 {
-    color: var(--white);
-}
-
+.scroll-down h1,
 .scroll-up h1 {
     color: var(--white);
 }
@@ -75,4 +72,23 @@
 .bmg-product-story-overlay-responsive a:hover,
 .bmg-product-reviews-about a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 1024px) {
+    .bmg-product-name {
+        font-size: calc(1.5*var(--text-xxl));
+    }
+    .bmg-product-story h1:hover {
+        text-decoration: underline;
+        color: var(--color-primary-bg);
+    }
+    .bmg-product-description-responsive {
+        font-size: calc(1.2*var(--text-sm));
+        font-weight: 400;
+        line-height: var(--space-lg);
+    }
+    .scroll-down h1,
+    .scroll-up h1 {
+        font-size: var(--text-xl);
+    }
 }
