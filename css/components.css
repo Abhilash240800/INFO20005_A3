@@ -208,9 +208,12 @@
 }
 
 .footer-links a {
-    padding-left: var(--space-md);
     padding-top: var(--space-md);
     color: var(--white);
+}
+
+.footer-links a:not(:first-child) {
+    padding-left: var(--space-md);
 }
 
 .footer-links a:hover {
@@ -236,6 +239,8 @@
     }
     .footer-links a {
         padding-top: var(--space-lg);
+    }
+    .footer-links a:not(:first-child) {
         padding-left: 0;
     }
     .logo {
