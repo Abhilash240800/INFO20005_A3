@@ -1,5 +1,5 @@
 .btn-primary-lg {
-    width: 180px;
+    width: 140%;
     padding: 5px;
     font-family: var(--font-text), serif;
     font-size: var(--text-lg);
@@ -12,7 +12,7 @@
 }
 
 .btn-secondary-lg {
-    width: 180px;
+    width: 140%;
     padding: 5px;
     font-family: var(--font-text);
     font-size: var(--text-lg);
@@ -25,7 +25,7 @@
 }
 
 .btn-primary {
-    width: 170px;
+    width: 120%;
     padding: 5px;
     font-family: var(--font-text), serif;
     font-size: var(--text-md);
@@ -38,7 +38,7 @@
 }
 
 .btn-secondary {
-    width: 170px;
+    width: 120%;
     padding: 5px;
     font-family: var(--font-text);
     font-size: var(--text-md);
@@ -98,6 +98,7 @@
 }
 
 .nav li a {
+    font-size: calc(0.85*var(--text-md));
     color: var(--color-link);
     text-decoration: none;
 }
@@ -220,7 +221,7 @@
 }
 
 .footer-sponsors>* {
-    width: 2.85vw;
+    width: 35px;
     margin-top: var(--space-xs);
     margin-bottom: var(--space-xs);
 }

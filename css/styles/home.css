@@ -1,16 +1,19 @@
 .bmg-title {
     line-height: var(--space-xl);
-    text-align: center;
     font-family: var(--font-display), sans-serif;
     font-size: var(--text-lg);
+    text-align: center;
+}
+
+.product-name {
+    text-align: center;
 }
 
 .bmg-title span {
     font-size: var(--text-lg);
 }
 
-.bmg-footer .footer-links {
-    font-family: var(--font-display), sans-serif;
+.footer-links a {
     font-size: var(--text-lg);
-    letter-spacing: var(--space-xxs);
+    font-weight: 400;
 }
