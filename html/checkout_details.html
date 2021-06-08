@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The BMG Arielle</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles/checkout_details.css">
+    <link rel="stylesheet" type="text/css" href="../css/layouts/checkout_details.css">
+    <script src="../js/index.js"></script>
+</head>
+
+<body>
+
+</body>
+
+<div class="bg-quad-1 position-sticky-bg"></div>
+<div class="bg-quad-2"></div>
+<div class="bg-quad-3 position-sticky-bg"></div>
+<div class="bg-quad-4"></div>
+<div class="bg-quad-5"></div>
+
+<div class="bg-blanket position-sticky-bg"></div>
+<div class="bg-quad-1-responsive position-sticky-bg"></div>
+<div class="bg-quad-2-responsive position-sticky-bg"></div>
+
+<img class="logo hover-transition-width position-sticky" src="..\resources\images\icons\logo.png">
+<object class="icon icon-burger content-responsive position-sticky-lg" data="..\resources\images\icons\Burger.svg"></object>
+<ul class="nav">
+    <li>
+        <a class="hover-transition-link" href="#">BMG SERIES</a>
+    </li>
+    <li>
+        <a class="hover-transition-link" href="#">BMG ACCESSORIES</a>
+    </li>
+    <li>
+        <a class="hover-transition-link" href="#">BMG TOURS</a>
+    </li>
+    <li>
+        <a class="hover-transition-link" href="#">BMG ARIELLE</a>
+    </li>
+</ul>
+<div class="icon-group position-sticky">
+    <object class="icon" data="..\resources\images\icons\Search.svg"></object>
+    <object class="icon" data="..\resources\images\icons\basket.svg"></object>
+</div>
+
+<div class="bmg-header">
+    <h1>CHECKOUT</h1>
+</div>
+
+<div class="checkout-step-monitor-curve">
+    <div id="csm-curve"></div>
+</div>
+
+<div class="checkout-step-monitor-steps">
+    <div class="checkout-step-monitor-steps-nc">
+        <div id="csm-step-prev"></div>
+        <div id="csm-step-next"></div>
+    </div>
+    <div class="checkout-step-monitor-steps-c">
+        <div id="csm-step-current"></div>
+    </div>
+</div>
+
+<div class="checkout-step-monitor-header">
+    <h1>SHIPPING DETAILS</h1>
+</div>
+
+
+<form class="form-group shipping-details-form">
+    <div class="form-group-flex">
+        <fieldset class="personal-information-form">
+            <h1>Personal Informtion</h1>
+            <ul class="form-item-horizontal">
+                <li>
+
+                    <label for="fname">First Name *</label><br>
+                    <input type="text" id="fname" name="fname">
+                </li>
+                <li>
+
+                    <label for="lname">Last Name *</label><br>
+                    <input type="text" id="lname" name="lname">
+                </li>
+            </ul>
+            <div class="form-item">
+                <label for="email">Email-id *</label><br>
+                <input type="email" id="email" name="email"><br>
+            </div>
+            <div class="form-item">
+                <label for="phone">Mobile Phone *</label><br>
+                <input type="number" id="phone" name="phone"><br>
+            </div>
+            <div class="form-item-checkbox">
+                <input type="checkbox" id="terms" name="terms" value="accept">
+                <label for="terms">I AGREE TO BMG TERMS AND CONDITIONS *</label><br>
+            </div>
+            <div class="form-item-checkbox">
+                <input type="checkbox" id="marketing" name="marketing" value="accept">
+                <label for="marketing">I WANT PROMTIONAL INFORMATION ABOUT BMG</label><br>
+            </div>
+        </fieldset>
+
+        <fieldset class="delivery-address-form">
+            <h1>DELIVERY ADDRESS</h1>
+            <div class="form-item">
+                <label for="address1">STREET ADDRESS - 1 </label><br>
+                <input type="text" id="address1" name="address1"><br>
+            </div>
+            <div class="form-item">
+                <label for="address2">STREET ADDRESS - 2 </label><br>
+                <input type="text" id="address2" name="address2"><br>
+            </div>
+
+            <ul class="form-item-horizontal">
+                <li>
+
+                    <label for="city">CITY *</label><br>
+                    <input type="text" id="city" name="city">
+                </li>
+                <li>
+
+                    <label for="state">STATE *</label><br>
+                    <input type="text" id="state" name="state">
+                </li>
+            </ul>
+
+            <ul class="form-item-horizontal">
+                <li>
+
+                    <label for="country">COUNTRY *</label><br>
+                    <input type="text" id="country" name="country">
+                </li>
+                <li>
+
+                    <label for="zipcode">ZIPCODE *</label><br>
+                    <input type="number" id="zipcode" name="zipcode">
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset class="delivery-address-form">
+            <h1>BILLING ADDRESS</h1>
+
+            <div class="form-item-checkbox">
+                <input type="checkbox" id="billing" name="marketing" value="accept">
+                <label for="billing">SAME AS DELIVERY ADDRESS</label><br>
+            </div>
+            <div class="form-item">
+                <label for="address1-billing">STREET ADDRESS - 1 </label><br>
+                <input type="text" id="address1-billing" name="address1-billing"><br>
+            </div>
+            <div class="form-item">
+                <label for="address2-billing">STREET ADDRESS - 2 </label><br>
+                <input type="text" id="address2-billing" name="address2-billing"><br>
+            </div>
+
+            <ul class="form-item-horizontal">
+                <li>
+
+                    <label for="city-billing">CITY *</label><br>
+                    <input type="text" id="city-billing" name="city-billing">
+                </li>
+                <li>
+
+                    <label for="state-billing">STATE *</label><br>
+                    <input type="text" id="state-billing" name="state-billing">
+                </li>
+            </ul>
+
+            <ul class="form-item-horizontal">
+                <li>
+
+                    <label for="country-billing">COUNTRY *</label><br>
+                    <input type="text" id="country-billing" name="country-billing">
+                </li>
+                <li>
+
+                    <label for="zipcode-billing">ZIPCODE *</label><br>
+                    <input type="number" id="zipcode-billing" name="zipcode-billing">
+                </li>
+            </ul>
+        </fieldset>
+    </div>
+    <input type="submit" class="btn-primary-lg" style="width:250px;" value="continue to payment ">
+
+</form>
+<div class="footer ">
+    <p>The House Music Group</p>
+    <p>Decades of Guitar Specialisation</p>
+    <div class="footer-sponsors ">
+        <img src="..\resources\images\footer\house music group ac.png ">
+        <img src="..\resources\images\footer\house music group bc.png ">
+        <img src="..\resources\images\footer\house music group bmg.png ">
+    </div>
+    <p>&copy; 2021 Brian May Guitars House Music Ltd. </p>
+</div>
+
+<div class="footer-links ">
+    <a href="# ">ARTIST GALLERY</a>
+    <a href="# ">TESTIMONIALS</a>
+    <a href="# ">LATEST NEWS</a>
+    <a href="# ">CONTACT US</a>
+    <a href="# ">SUPPORT</a>
+</div>
+
+</html>

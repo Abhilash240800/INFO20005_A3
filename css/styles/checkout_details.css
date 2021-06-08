@@ -1,0 +1,28 @@
+.bmg-header h1 {
+    font-family: var(--font-display);
+    font-size: calc(2*var(--text-xxl));
+    font-weight: 400;
+    color: var(--color-primary-dark);
+    letter-spacing: var(--space-xxs);
+}
+
+.checkout-step-monitor-header h1 {
+    font-weight: 500;
+    letter-spacing: calc(0.85*var(--space-xxs));
+    padding-top: 15px;
+}
+
+.checkout-step-monitor-header h1 {
+    padding-left: 5px;
+}
+
+.footer-links a {
+    font-size: var(--text-lg);
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 1024px) {
+    .bmg-header h1 {
+        font-size: calc(1.5*var(--text-xxl));
+    }
+}

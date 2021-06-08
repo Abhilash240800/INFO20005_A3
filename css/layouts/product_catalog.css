@@ -272,7 +272,7 @@ body {
     }
     body {
         display: grid;
-        grid-template-rows: auto;
+        grid-template-rows: 76.8px 76.8px calc(691.2px - 2*var(--space-md)) auto auto;
         grid-template-columns: repeat(12, 1fr);
         gap: var(--space-sm);
     }
@@ -323,10 +323,12 @@ body {
     .bmg-group-header {
         margin-top: var(--space-lg);
         margin-bottom: var(--space-lg);
+        margin-left: var(--space-xl);
         z-index: -2;
     }
     .bmg-products-catalog {
         z-index: -2;
+        margin-right: var(--space-lg);
     }
     .bmg-products-catalog-content {
         justify-content: center;

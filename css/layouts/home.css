@@ -4,97 +4,135 @@
 
 body {
     display: grid;
-    grid-template-areas: "header" "main" "artists" "footer";
-    grid-template-rows: 10vh 75vh 15vh auto;
-    grid-template-columns: 53% 47%;
+    grid-template-rows: 76.8px 576px calc(115.2px - 2* var(--space-md)) auto;
+    grid-template-columns: repeat(12, 1fr);
     gap: var(--space-md);
 }
 
-body>*:not(:first-child) {
+.logo {
     margin-left: var(--space-md);
-    margin-right: var(--space-lg);
-}
-
-.bmg-header {
-    grid-area: "header";
+    margin-top: var(--space-md);
     grid-row: 1;
-    grid-column: 1 / 3;
+    grid-column: 1/ 3;
 }
 
-.bmg-header .nav {
-    margin-right: var(--space-xxl);
+.nav {
+    margin-top: var(--space-md);
+    grid-row: 1;
+    grid-column: 1 / 13;
+    justify-self: center;
+}
+
+.icon-group {
+    margin-top: var(--space-md);
+    margin-right: var(--space-md);
+    grid-row: 1;
+    grid-column: 12;
+    justify-self: right;
 }
 
 .bmg-hero {
     grid-row: 2;
-    grid-column: 1;
+    grid-column: 1/7;
+    justify-self: center;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center
+    align-items: center;
+    justify-content: center;
+    width: 680px;
+    margin-top: 40px;
 }
 
-.bmg-image img {
-    max-width: 350px;
-    margin-top: var(--space-xxl);
+.bmg-hero img {
+    width: 370px;
+    margin-top: var(--space-xl);
 }
 
 .bmg-feature {
     grid-row: 2;
-    grid-column: 2;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 490px;
-    height: 546px;
-    justify-content: center;
-    margin-left: var(--space-xxxl);
+    grid-column: 8/13;
+    justify-self: center;
 }
 
-.bmg-feature .product-info-header {
-    padding-left: calc(2*var(--space-xxxl));
-    margin-bottom: var(--space-xl);
-}
-
-.bmg-feature .product-info-main {
+.bmg-faeture-flex {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
-    height: 509.6px;
 }
 
-.bmg-feature .product-info-main-left {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    height: 327.6px;
-    width: 190px;
-    margin-left: 40px;
+.bmg-faeture-flex li {
+    display: grid;
+    width: 540px;
+    height: 700px;
+    grid-template-rows: 40px 15px 20px calc(680px/2 - 100px) 25px calc(680px/2 - 100px);
+    grid-template-columns: repeat(12, 1fr);
 }
 
-.bmg-feature .product-image {
-    max-width: 492px;
-    margin: calc(-1*var(--space-xxxl));
+.product-name {
+    grid-row: 1;
+    grid-column: 2/13;
+    align-self: center;
+    justify-self: center;
 }
 
-.bmg-feature .product-image:hover {
-    max-width: 510px;
+.product-ratings {
+    grid-row: 2;
+    grid-column: 2/13;
+    align-self: center;
+    justify-self: center;
+}
+
+.bmg-add-to-basket {
+    grid-row: 4;
+    grid-column: 1/6;
+    align-self: center;
+    justify-self: center;
+}
+
+.arrow-left {
+    grid-row: 5;
+    grid-column: 1/4;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.arrow-right {
+    grid-row: 5;
+    grid-column: 11/13;
+    align-self: center;
+}
+
+.product-description {
+    grid-row: 6;
+    grid-column: 1/6;
+    align-self: center;
+    justify-self: center;
+    width: 180px;
+}
+
+.product-image {
+    grid-row: 4/7;
+    grid-column: 3/13;
+    align-self: center;
+    justify-self: center;
+    width: 480px;
+}
+
+.product-image:hover {
+    width: 500px;
 }
 
 .bmg-artists {
-    grid-area: "artists";
     grid-row: 3;
-    grid-column: 1/3;
-    position: relative;
-    overflow: hidden;
-    left: calc(-1*var(--space-md));
+    grid-column: 1/13;
+    align-self: center;
+    justify-self: center;
     width: 100vw;
-    min-height: 109.2px;
-    margin-top: var(--space-xl)
+    position: relative;
 }
+
+.artist-collection {}
 
 .bmg-footer {
     grid-area: "footer";
@@ -181,48 +219,48 @@ body>*:not(:first-child) {
     display: none;
 }
 
+.content-responsive {
+    display: none;
+}
+
 @media only screen and (max-width: 1200px) {
+    .content-responsive {
+        display: revert;
+    }
     body {
         display: grid;
-        grid-template-areas: "header" "hero" "artists" "feature" "footer";
-        grid-template-rows: 10vh 75vh 15vh 100vh auto;
-        grid-template-columns: 100%;
+        grid-template-rows: 76.8px auto;
+        grid-template-columns: repeat(12, 1fr);
         gap: var(--space-md);
     }
-    .bmg-header {
-        grid-area: "header";
+    .logo {
+        margin-left: var(--space-md);
+        margin-top: var(--space-md);
         grid-row: 1;
-        grid-column: 1;
-    }
-    .bmg-header .icon-group {
-        display: none;
-    }
-    .bmg-header .nav {
-        margin-right: revert;
-        display: none;
+        grid-column: 1/ 6;
     }
     .icon-burger {
         display: revert;
+        grid-row: 1;
+        grid-column: 12;
+        align-self: center;
     }
-    .bmg-hero {
-        grid-area: "hero";
-        grid-row: 2;
-        grid-column: 1;
+    /*Alter After Overlay*/
+    .nav {
+        display: none;
+        margin-top: var(--space-md);
+        grid-row: 1;
+        grid-column: 1 / 13;
+        justify-self: center;
     }
-    .bmg-artists {
-        grid-area: "artists";
-        grid-row: 3;
-        grid-column: 1;
-    }
-    .bmg-feature {
-        grid-area: "feature";
-        grid-row: 4;
-        grid-column: 1;
-    }
-    .bmg-footer {
-        grid-area: "footer";
-        grid-row: 5;
-        grid-column: 1;
+    /*Alter After Overlay*/
+    .icon-group {
+        display: none;
+        margin-top: var(--space-md);
+        margin-right: var(--space-md);
+        grid-row: 1;
+        grid-column: 12;
+        justify-self: right;
     }
     .bg-quad-1,
     .bg-quad-2,

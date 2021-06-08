@@ -1,0 +1,102 @@
+.bmg-header h1 {
+    font-family: var(--font-display);
+    font-size: calc(2*var(--text-xxl));
+    font-weight: 400;
+    color: var(--color-primary-dark);
+    letter-spacing: var(--space-xxs);
+}
+
+.bmg-checkout-cart-summary h1 {
+    font-family: var(--font-text);
+    font-size: calc(1.05*var(--text-xxl));
+    letter-spacing: calc(0.85*var(--space-xxs));
+    font-weight: 400;
+    padding-top: 15px;
+}
+
+.scroll-up h1 {
+    color: var(--white);
+}
+
+.bmg-checkout-cart-summary a {
+    font-size: var(--text-sm);
+    color: var(--color-danger);
+}
+
+.bmg-cart-item-amount {
+    border: 1px solid var(--gray-5);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+    padding-right: 6px;
+}
+
+.bmg-product-limited-stock p {
+    font-size: calc(1.4*var(--text-sm));
+    text-transform: uppercase;
+    font-weight: 300;
+    color: var(--color-danger);
+}
+
+.bmg-cart-item-pricing h2,
+.bmg-cart-item-pricing h1 {
+    font-family: var(--font-text);
+    font-size: var(--text-xl);
+}
+
+.bmg-cart-item-pricing h2 {
+    font-weight: 300;
+}
+
+.bmg-cart-item-pricing h1,
+.checkout-step-monitor-header h1 {
+    font-weight: 500;
+    letter-spacing: calc(0.85*var(--space-xxs));
+}
+
+.checkout-step-monitor-header h1 {
+    padding-left: 5px;
+}
+
+.bmg-cart-item-content>h1 {
+    font-size: var(--text-xxxl);
+}
+
+.bmg-cart-item-content>h1:hover {
+    text-decoration: underline;
+}
+
+.bmg-cart-item-quantity>p {
+    color: var(--color-primary-dark);
+    font-weight: 300;
+}
+
+.footer-links a {
+    font-size: var(--text-lg);
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 1024px) {
+    .bmg-header h1 {
+        font-size: calc(1.5*var(--text-xxl));
+    }
+    .bmg-checkout-cart-summary h1 {
+        font-size: var(--text-xl);
+    }
+    .bmg-product-limited-stock p {
+        font-size: var(--text-sm);
+    }
+    .bmg-cart-item-pricing h2,
+    .bmg-cart-item-pricing h1,
+    .bmg-cart-item-quantity p,
+    .bmg-cart-item-amount {
+        font-size: var(--text-md);
+    }
+    .bmg-cart-item-content>h1 {
+        font-size: var(--text-xl);
+    }
+    .bmg-checkout-cart-summary h1 {
+        font-size: var(--text-lg);
+        letter-spacing: calc(0.85*var(--space-xxs));
+    }
+}

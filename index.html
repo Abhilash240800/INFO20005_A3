@@ -12,81 +12,76 @@
 </head>
 
 <body>
-    <div class="bg-setter">
-        <div class="bg-quad-1"></div>
-        <div class="bg-quad-2"></div>
-        <div class="bg-quad-3"></div>
-        <div class="bg-quad-4"></div>
-        <div class="bg-quad-5"></div>
-        <div class="bg-quad-6"></div>
-        <div class="bg-quad-1-tablet"></div>
-        <div class="bg-quad-2-tablet"></div>
-        <div class="bg-quad-3-tablet"></div>
-        <div class="bg-quad-4-tablet"></div>
-        <div class="bg-quad-5-tablet"></div>
-        <div class="bg-quad-6-tablet"></div>
+    <!-- <div class="bg-quad-1"></div>
+    <div class="bg-quad-2"></div>
+    <div class="bg-quad-3"></div>
+    <div class="bg-quad-4"></div>
+    <div class="bg-quad-5"></div>
+    <div class="bg-quad-6"></div>
+    <div class="bg-quad-1-tablet"></div>
+    <div class="bg-quad-2-tablet"></div>
+    <div class="bg-quad-3-tablet"></div>
+    <div class="bg-quad-4-tablet"></div>
+    <div class="bg-quad-5-tablet"></div>
+    <div class="bg-quad-6-tablet"></div>-->
+
+    <img class="logo hover-transition-width" src="..\resources\images\icons\logo.png">
+    <object class="icon icon-burger content-responsive" data="..\resources\images\icons\Burger.svg"></object>
+    <ul class="nav">
+        <li>
+            <a class="hover-transition-link" href="#">BMG SERIES</a>
+        </li>
+        <li>
+            <a class="hover-transition-link" href="#">BMG ACCESSORIES</a>
+        </li>
+        <li>
+            <a class="hover-transition-link" href="#">BMG TOURS</a>
+        </li>
+        <li>
+            <a class="hover-transition-link" href="#">BMG ARIELLE</a>
+        </li>
+    </ul>
+    <div class="icon-group">
+        <object class="icon" data="..\resources\images\icons\Search.svg"></object>
+        <object class="icon" data="..\resources\images\icons\basket.svg"></object>
     </div>
 
-    <section class="bmg-header nav-header">
-        <!-- oN object hover Flex box spacing resizes-->
-        <img class="logo hover-transition-width" src="resources\images\icons\logo.png">
-        <object class="icon icon-burger" data="resources\images\icons\Burger.svg"></object>
-        <ul class="nav">
-            <li>
-                <a class="hover-transition-link" href="#">BMG SERIES</a>
-            </li>
-            <li>
-                <a class="hover-transition-link" href="#">BMG ACCESSORIES</a>
-            </li>
-            <li>
-                <a class="hover-transition-link" href="#">BMG TOURS</a>
-            </li>
-            <li>
-                <a class="hover-transition-link" href="#">BMG ARIELLE</a>
-            </li>
-        </ul>
-        <div class="icon-group">
-            <object class="icon" data="resources\images\icons\Search.svg"></object>
-            <object class="icon" data="resources\images\icons\basket.svg"></object>
-        </div>
-    </section>
-
-    <section class="bmg-hero">
+    <div class="bmg-hero">
         <div class="bmg-title">
             <h1>THE OFFICIAL HOME OF<br><span>BRIAN MAY GUITARS</span></h1>
         </div>
-        <div class="bmg-image">
-            <img src="resources\images\home\BMG Brian May Home.png">
-        </div>
-    </section>
+        <img src="resources\images\home\BMG Brian May Home.png">
+    </div>
 
-    <section id="feature-product" class="bmg-feature">
-        <div class="product-info-header">
-            <h3 id="feature-product-name" class="product-name">The BMG ARIELLE</h3>
-            <div class="product-ratings">
-                <div id="feature-product-stars" class="product-stars">
-                    <object data="resources\images\icons\star_primary.svg"></object>
-                    <object data="resources\images\icons\star_primary.svg"></object>
-                    <object data="resources\images\icons\star_primary.svg"></object>
-                    <object data="resources\images\icons\star_primary.svg"></object>
-                    <object data="resources\images\icons\star_primary.svg"></object>
+    <div class="bmg-feature">
+        <ul class="bmg-faeture-flex">
+            <li id="feature-product">
+                <h3 id="feature-product-name" class="product-name">The BMG ARIELLE</h3>
+                <div class="product-ratings">
+                    <div id="feature-product-stars" class="product-stars">
+                        <object data="resources\images\icons\star_primary.svg"></object>
+                        <object data="resources\images\icons\star_primary.svg"></object>
+                        <object data="resources\images\icons\star_primary.svg"></object>
+                        <object data="resources\images\icons\star_primary.svg"></object>
+                        <object data="resources\images\icons\star_primary.svg"></object>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="product-info-main">
-            <div class="product-info-main-left">
-                <div class="button-group">
-                    <h3 id="feature-product-cost" class="product-cost"> &euro;2,458</h3>
-                    <button type="button" class="btn-primary-lg">Add to Basket</button>
+                <div class="bmg-add-to-basket">
+                    <div class="button-group">
+                        <h3 id="feature-product-cost" class="product-cost"> &euro;2,458</h3>
+                        <button type="button" class="btn-primary-lg">Add to Basket</button>
+                    </div>
                 </div>
+
+                <object class="arrow arrow-left" data="resources\images\icons\Arrow.svg"></object>
                 <p id="feature-product-description" class="product-description"> Features superb build quality, awesome playability and an astonishingly rich diversity of killer tones.</p>
-            </div>
-            <img id="feature-product-image" class="product-image hover-transition-size" src="resources\images\products\BMG Arielle 2021 -  Content 1.jpg">
-            <object class="arrow" data="resources\images\icons\Arrow.svg"></object>
-        </div>
-    </section>
+                <img id="feature-product-image" class="product-image hover-transition-size" src="resources\images\products\BMG Arielle 2021 -  Content 1.jpg">
+                <object class="arrow arrow-right" data="resources\images\icons\Arrow.svg"></object>
+            </li>
+        </ul>
+    </div>
 
-    <section class="bmg-artists">
+    <div class="bmg-artists">
         <div class="animate-artist-collection">
             <ul class="artist-collection">
                 <li>&bull;
@@ -137,28 +132,26 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </div>
 
-    <section class="bmg-footer">
-        <div class="footer">
-            <p>The House Music Group</p>
-            <p>Decades of Guitar Specialisation</p>
-            <div class="footer-sponsors">
-                <img src="resources\images\footer\house music group ac.png">
-                <img src="resources\images\footer\house music group bc.png">
-                <img src="resources\images\footer\house music group bmg.png">
-            </div>
-            <p>&copy; 2021 Brian May Guitars House Music Ltd. </p>
+    <!-- <div class="footer">
+        <p>The House Music Group</p>
+        <p>Decades of Guitar Specialisation</p>
+        <div class="footer-sponsors">
+            <img src="resources\images\footer\house music group ac.png">
+            <img src="resources\images\footer\house music group bc.png">
+            <img src="resources\images\footer\house music group bmg.png">
         </div>
+        <p>&copy; 2021 Brian May Guitars House Music Ltd. </p>
+    </div>
 
-        <div class="footer-links">
-            <a href="#">ARTIST GALLERY</a>
-            <a href="#">TESTIMONIALS</a>
-            <a href="#">LATEST NEWS</a>
-            <a href="#">CONTACT US</a>
-            <a href="#">SUPPORT</a>
-        </div>
-    </section>
+    <div class="footer-links">
+        <a href="#">ARTIST GALLERY</a>
+        <a href="#">TESTIMONIALS</a>
+        <a href="#">LATEST NEWS</a>
+        <a href="#">CONTACT US</a>
+        <a href="#">SUPPORT</a>
+    </div> -->
 </body>
 
 </html>
