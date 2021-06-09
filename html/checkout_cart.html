@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="../css/styles/checkout_cart.css">
     <link rel="stylesheet" type="text/css" href="../css/layouts/checkout_cart.css">
     <script src="../js/index.js"></script>
+
+
 </head>
 
 <body>
@@ -24,25 +26,25 @@
     <div class="bg-quad-2-responsive position-sticky-bg"></div>
     <div class="bg-quad-3-responsive position-sticky-bg-bottom"></div>
 
-    <img class="logo hover-transition-width position-sticky" src="..\resources\images\icons\logo.png">
-    <object class="icon icon-burger content-responsive position-sticky-lg" data="..\resources\images\icons\Burger.svg"></object>
+    <img class="logo hover-transition-width position-sticky" src="..\resources\images\icons\logo.png" href="/" onclick="click_redirect(this)">
+    <img class="icon icon-burger content-responsive position-sticky-lg" src="..\resources\images\icons\Burger.svg" onclick="show_nav_overlay()"></img>
     <ul class="nav">
         <li>
-            <a class="hover-transition-link" href="#">BMG SERIES</a>
+            <a class="hover-transition-link" href="\html\product_catalog.html?group=bmg-special">BMG SPECIAL</a>
         </li>
         <li>
-            <a class="hover-transition-link" href="#">BMG ACCESSORIES</a>
+            <a class="hover-transition-link" href="\html\product_catalog.html?group=bmg-special-le">LIMITED EDITION</a>
         </li>
         <li>
-            <a class="hover-transition-link" href="#">BMG TOURS</a>
+            <a class="hover-transition-link" href="\html\product_catalog.html?group=bmg-series">BMG SERIES</a>
         </li>
         <li>
-            <a class="hover-transition-link" href="#">BMG ARIELLE</a>
+            <a class="hover-transition-link" href="\html\product_catalog.html?group=bmg-arielle">BMG ARIELLE</a>
         </li>
     </ul>
     <div class="icon-group position-sticky">
-        <object class="icon" data="..\resources\images\icons\Search.svg"></object>
-        <object class="icon" data="..\resources\images\icons\basket.svg"></object>
+        <img class="icon" src="..\resources\images\icons\Search.svg" onclick="show_search_overlay()"></img>
+        <img class="icon" src="..\resources\images\icons\basket.svg" onclick="show_cart_overlay()"></img>
     </div>
 
     <div class="bmg-header">
@@ -66,8 +68,8 @@
         <h1>CART</h1>
     </div>
     <div class="bmg-cart-item">
-        <ul class="bmg-cart-item-flex">
-            <li>
+        <ul id="bmg-cart-item-content" class="bmg-cart-item-flex">
+            <!--<li>
                 <img class="product-image" src="..\resources\images\products\BMG Special 2020 - Antique Cherry Content 1.jpg ">
                 <div class="bmg-cart-item-content">
                     <h1>THE BMG SPECIAL</h1>
@@ -90,87 +92,15 @@
                         <p>Limited Stock</p>
                     </div>
                 </div>
-            </li>
-            <li>
-                <img class="product-image" src="..\resources\images\products\BMG Special 2020 - Antique Cherry Content 1.jpg ">
-                <div class="bmg-cart-item-content">
-                    <h1>THE BMG SPECIAL</h1>
-                    <div class="bmg-cart-item-mr-flex">
-                        <div class="bmg-cart-item-quantity">
-                            <p>QTY</p>
-                            <button class="btn-add">+</button>
-                            <a class="bmg-cart-item-amount">1</a>
-                            <button class="btn-remove">&mdash;</button>
-                        </div>
-                        <div class="bmg-cart-item-pricing">
-                            <h2 class="bmg-cart-item-pricing-price-header">PRICE :</h2>
-                            <h2 class="bmg-cart-item-pricing-subtotal-header">SUBTOTAL :</h2>
-                            <h1 class="bmg-cart-item-pricing-price">&euro;2,458</h1>
-                            <h1 class="bmg-cart-item-pricing-subtotal">&euro;2,458</h1>
-                        </div>
-                    </div>
-                    <div class="bmg-product-limited-stock ">
-                        <object class="info " data="..\resources\images\icons\info_danger.svg "></object>
-                        <p>Limited Stock</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img class="product-image" src="..\resources\images\products\BMG Special 2020 - Antique Cherry Content 1.jpg ">
-                <div class="bmg-cart-item-content">
-                    <h1>THE BMG SPECIAL</h1>
-                    <div class="bmg-cart-item-mr-flex">
-                        <div class="bmg-cart-item-quantity">
-                            <p>QTY</p>
-                            <button class="btn-add">+</button>
-                            <a class="bmg-cart-item-amount">1</a>
-                            <button class="btn-remove">&mdash;</button>
-                        </div>
-                        <div class="bmg-cart-item-pricing">
-                            <h2 class="bmg-cart-item-pricing-price-header">PRICE :</h2>
-                            <h2 class="bmg-cart-item-pricing-subtotal-header">SUBTOTAL :</h2>
-                            <h1 class="bmg-cart-item-pricing-price">&euro;2,458</h1>
-                            <h1 class="bmg-cart-item-pricing-subtotal">&euro;2,458</h1>
-                        </div>
-                    </div>
-                    <div class="bmg-product-limited-stock ">
-                        <object class="info " data="..\resources\images\icons\info_danger.svg "></object>
-                        <p>Limited Stock</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img class="product-image" src="..\resources\images\products\BMG Special 2020 - Antique Cherry Content 1.jpg ">
-                <div class="bmg-cart-item-content">
-                    <h1>THE BMG SPECIAL</h1>
-                    <div class="bmg-cart-item-mr-flex">
-                        <div class="bmg-cart-item-quantity">
-                            <p>QTY</p>
-                            <button class="btn-add">+</button>
-                            <a class="bmg-cart-item-amount">1</a>
-                            <button class="btn-remove">&mdash;</button>
-                        </div>
-                        <div class="bmg-cart-item-pricing">
-                            <h2 class="bmg-cart-item-pricing-price-header">PRICE :</h2>
-                            <h2 class="bmg-cart-item-pricing-subtotal-header">SUBTOTAL :</h2>
-                            <h1 class="bmg-cart-item-pricing-price">&euro;2,458</h1>
-                            <h1 class="bmg-cart-item-pricing-subtotal">&euro;2,458</h1>
-                        </div>
-                    </div>
-                    <div class="bmg-product-limited-stock ">
-                        <object class="info " data="..\resources\images\icons\info_danger.svg "></object>
-                        <p>Limited Stock</p>
-                    </div>
-                </div>
-            </li>
+            </li> -->
         </ul>
     </div>
 
     <div class="bmg-checkout-cart-summary position-sticky-bottom">
         <div class="bmg-checkout-cart-summary-flex">
-            <h1>TOTAL: <span>&euro;2,458</span></h1>
+            <h1>TOTAL: <span id="checkout-cart-grand-total">&euro;0</span></h1>
             <a>TAXES INCLUDED</a>
-            <button type="button" class="btn-secondary">PLACE ORDER</button>
+            <button type="button" class="btn-secondary" href="\html\checkout_details.html" onclick="click_check_redirect(this)">PLACE ORDER</button>
         </div>
     </div>
     <div class="footer ">
@@ -191,6 +121,58 @@
         <a href="# ">CONTACT US</a>
         <a href="# ">SUPPORT</a>
     </div>
+    <div id="nav-overlay" class="nav-overlay">
+        <img class="icon icon-close" src="..\resources\images\icons\Previous.svg" onclick="hide_nav_overlay()"></img>
+        <img class="icon icon-search" src="..\resources\images\icons\Search.svg" onclick="show_search_overlay()"></img>
+        <img class="icon  icon-basket" src="..\resources\images\icons\basket.svg" onclick="show_cart_overlay()"></img>
+        <ul class="nav-vertical">
+            <li>
+                <a class="hover-transition-link" href="\html\product_catalog.html?group=bmg-special">BMG SPECIAL</a>
+            </li>
+            <li>
+                <a class="hover-transition-link" href="\html\product_catalog.html?group=bmg-special-le">LIMITED EDITION</a>
+            </li>
+            <li>
+                <a class="hover-transition-link" href="\html\product_catalog.html?group=bmg-series">BMG SERIES</a>
+            </li>
+            <li>
+                <a class="hover-transition-link" href="\html\product_catalog.html?group=bmg-arielle">BMG ARIELLE</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="cart-overlay" class="cart-overlay">
+        <img class="icon icon-close" src="..\resources\images\icons\Previous.svg" onclick="hide_cart_overlay()"></img>
+        <div class="bmg-cart-item">
+            <ul id="cart-overlay-content" class="bmg-cart-item-flex">
+            </ul>
+        </div>
+        <div class="bmg-checkout-cart-summary">
+            <div class="bmg-checkout-cart-summary-flex">
+                <h1>TOTAL:
+                    <span id="cart-overlay-grand-total"></span>
+                </h1>
+                <a>TAXES INCLUDED</a>
+                <button type="button " class="btn-secondary " href="\html\checkout_cart.html" onclick="click_redirect(this)">CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="search-overlay" class="search-overlay">
+        <img class="icon icon-close" src="..\resources\images\icons\Previous.svg" onclick="hide_search_overlay()"></img>
+        <form class="form-group">
+            <fieldset>
+                <div class="form-item">
+                    <input type="text" id="search" name="search" placeholder="SEARCH BMG"><br>
+                </div>
+            </fieldset>
+            <img class="icon icon-search" src="..\resources\images\icons\Search.svg" onclick="search_products()"></img>
+        </form>
+    </div>
 </body>
+
+<script>
+    inject_checkout_cart();
+</script>
 
 </html>

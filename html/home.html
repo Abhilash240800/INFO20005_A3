@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian May Guitars</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles/home.css">
+    <link rel="stylesheet" type="text/css" href="../css/layouts/home.css">
+    <script src="../js/index.js"></script>
+</head>
+
+<body>
+    <div class="bg-quad-1"></div>
+    <div class="bg-quad-2"></div>
+    <div class="bg-quad-3"></div>
+    <div class="bg-quad-4"></div>
+    <div class="bg-quad-5"></div>
+
+    <div class="bg-quad-1-responsive"></div>
+    <div class="bg-quad-2-responsive"></div>
+    <div class="bg-quad-3-responsive"></div>
+    <div class="bg-quad-4-responsive"></div>
+    <div class="bg-quad-5-responsive"></div>
+
+    <img id="nav" class="logo hover-transition-width" src="..\resources\images\icons\logo.png" href="/" onclick="click_redirect(this)">
+    <img class="icon icon-burger content-responsive" src="..\resources\images\icons\Burger.svg" onclick="show_nav_overlay()"></img>
+    <ul class="nav">
+        <li>
+            <a class="hover-transition-link" href="\html\product_catalog.html?group=bmg-special">BMG SPECIAL</a>
+        </li>
+        <li>
+            <a class="hover-transition-link" href="\html\product_catalog.html?group=bmg-special-le">LIMITED EDITION</a>
+        </li>
+        <li>
+            <a class="hover-transition-link" href="\html\product_catalog.html?group=bmg-series">BMG SERIES</a>
+        </li>
+        <li>
+            <a class="hover-transition-link" href="\html\product_catalog.html?group=bmg-arielle">BMG ARIELLE</a>
+        </li>
+    </ul>
+    <div class="icon-group">
+        <img class="icon" src="..\resources\images\icons\Search.svg" onclick="show_search_overlay()"></img>
+        <img class="icon" src="..\resources\images\icons\basket.svg" onclick="show_cart_overlay()"></img>
+    </div>
+
+    <div class="bmg-hero">
+        <div class="bmg-title">
+            <h1>THE OFFICIAL HOME OF<br><span>BRIAN MAY GUITARS</span></h1>
+        </div>
+        <img src="..\resources\images\home\BMG Brian May Home.png">
+    </div>
+
+    <div class="bmg-feature">
+        <ul class="bmg-faeture-flex">
+            <li id="feature-product">
+                <h3 id="feature-product-name" class="product-name">THE BMG SPECIAL</h3>
+                <div class="product-ratings">
+                    <div id="feature-product-stars" class="product-stars">
+                        <img src="..\resources\images\icons\star_primary.svg"></img>
+                        <img src="..\resources\images\icons\star_primary.svg"></img>
+                        <img src="..\resources\images\icons\star_primary.svg"></img>
+                        <img src="..\resources\images\icons\star_primary.svg"></img>
+                        <img src="..\resources\images\icons\star_primary.svg"></img>
+                    </div>
+                </div>
+                <div class="bmg-add-to-basket">
+                    <div class="button-group">
+                        <h3 id="feature-product-cost" class="product-cost"> &euro;2,458</h3>
+                        <button type="button" class="btn-primary" value="bmg-special-antique-cherry" onclick="add_to_cart(this)">Add to Basket</button>
+                    </div>
+                </div>
+                <p id="feature-product-description" class="product-description"> Features superb build quality, awesome playability and an astonishingly rich diversity of killer tones.</p>
+                <img id="feature-product-image" class="product-image hover-transition-size" src="..\resources\images\products\BMG Special 2020 - Antique Cherry Content 1.jpg">
+
+            </li>
+        </ul>
+    </div>
+
+    <div class="bmg-artists">
+        <div class="animate-artist-collection">
+            <ul class="artist-collection">
+                <li>&bull;
+                    <a href="#">ROGER TAYLOR</a>
+                </li>
+                <li>&bull;
+                    <a href="#">ADAM LAMBERT</a>
+                </li>
+                <li>&bull;
+                    <a href="#">NEIL FAIRCLOUGH</a>
+                </li>
+                <li>&bull;
+                    <a href="#">PAUL RODGERS</a>
+                </li>
+                <li>&bull;
+                    <a href="#">JAMIE MOSES</a>
+                </li>
+                <li>&bull;
+                    <a href="#">BARRY MOOREHOUSE</a>
+                </li>
+                <li>&bull;
+                    <a href="#">ARIELLE</a>
+                </li>
+            </ul>
+        </div>
+        <div class="animate-artist-collection-backfill">
+            <ul class="artist-collection">
+                <li>&bull;
+                    <a href="#">ROGER TAYLOR</a>
+                </li>
+                <li>&bull;
+                    <a href="#">ADAM LAMBERT</a>
+                </li>
+                <li>&bull;
+                    <a href="#">NEIL FAIRCLOUGH</a>
+                </li>
+                <li>&bull;
+                    <a href="#">PAUL RODGERS</a>
+                </li>
+                <li>&bull;
+                    <a href="#">JAMIE MOSES</a>
+                </li>
+                <li>&bull;
+                    <a href="#">BARRY MOOREHOUSE</a>
+                </li>
+                <li>&bull;
+                    <a href="#">ARIELLE</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>The House Music Group</p>
+        <p>Decades of Guitar Specialisation</p>
+        <div class="footer-sponsors">
+            <img src="..\resources\images\footer\house music group ac.png">
+            <img src="..\resources\images\footer\house music group bc.png">
+            <img src="..\resources\images\footer\house music group bmg.png">
+        </div>
+        <p>&copy; 2021 Brian May Guitars House Music Ltd. </p>
+    </div>
+
+    <div class="footer-links">
+        <a href="#">ARTIST GALLERY</a>
+        <a href="#">TESTIMONIALS</a>
+        <a href="#">LATEST NEWS</a>
+        <a href="#">CONTACT US</a>
+        <a href="#">SUPPORT</a>
+    </div>
+
+    <div id="nav-overlay" class="nav-overlay">
+        <img class="icon icon-close" src="..\resources\images\icons\Previous.svg" onclick="hide_nav_overlay()"></img>
+        <img class="icon icon-search" src="..\resources\images\icons\Search.svg" onclick="show_search_overlay()"></img>
+        <img class="icon  icon-basket" src="..\resources\images\icons\basket.svg" onclick="show_cart_overlay()"></img>
+        <ul class="nav-vertical">
+            <li>
+                <a class="hover-transition-link" href="\html\product_catalog.html?group=bmg-special">BMG SPECIAL</a>
+            </li>
+            <li>
+                <a class="hover-transition-link" href="\html\product_catalog.html?group=bmg-special-le">LIMITED EDITION</a>
+            </li>
+            <li>
+                <a class="hover-transition-link" href="\html\product_catalog.html?group=bmg-series">BMG SERIES</a>
+            </li>
+            <li>
+                <a class="hover-transition-link" href="\html\product_catalog.html?group=bmg-arielle">BMG ARIELLE</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="search-overlay" class="search-overlay">
+        <img class="icon icon-close" src="..\resources\images\icons\Previous.svg" onclick="hide_search_overlay()"></img>
+        <form class="form-group">
+            <fieldset>
+                <div class="form-item">
+                    <input type="text" id="search" name="search" placeholder="SEARCH BMG"><br>
+                </div>
+            </fieldset>
+            <img class="icon icon-search" src="..\resources\images\icons\Search.svg" onclick="search_products()"></img>
+        </form>
+    </div>
+
+    <div id="cart-overlay" class="cart-overlay">
+        <img class="icon icon-close" src="..\resources\images\icons\Previous.svg" onclick="hide_cart_overlay()"></img>
+        <div class="bmg-cart-item">
+            <ul id="cart-overlay-content" class="bmg-cart-item-flex">
+            </ul>
+        </div>
+        <div class="bmg-checkout-cart-summary">
+            <div class="bmg-checkout-cart-summary-flex">
+                <h1>TOTAL:
+                    <span id="cart-overlay-grand-total"></span>
+                </h1>
+                <a>TAXES INCLUDED</a>
+                <button type="button " class="btn-secondary " href="\html\checkout_cart.html" onclick="click_redirect(this)">CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="text-overlay" class="text-overlay">
+        <img class="icon icon-close" src="..\resources\images\icons\Previous.svg" onclick="hide_text_overlay()"></img>
+        <p id="text"></p>
+    </div>
+
+
+
+</body>
+
+
+
+</html>

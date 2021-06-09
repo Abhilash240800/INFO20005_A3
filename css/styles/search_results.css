@@ -6,6 +6,11 @@
     letter-spacing: var(--space-xxs);
 }
 
+.bmg-search-results p,
+.bmg-search-results a {
+    color: var(--color-primary-dark)
+}
+
 .bmg-product-name {
     text-align: center;
     line-height: var(--space-md);

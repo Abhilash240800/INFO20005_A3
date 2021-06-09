@@ -271,13 +271,6 @@ body {
         /*Centering Adjustment*/
         margin-left: 80px;
     }
-    .bmg-header,
-    .checkout-step-monitor-curve,
-    .checkout-step-monitor-steps,
-    .checkout-step-monitor-header,
-    .shipping-details-form {
-        z-index: -2;
-    }
     .btn-primary-lg {
         z-index: 0;
     }

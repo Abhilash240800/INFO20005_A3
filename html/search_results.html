@@ -6,21 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The BMG Arielle</title>
     <link rel="stylesheet" type="text/css" href="../css/index.css">
-    <link rel="stylesheet" type="text/css" href="../css/styles/checkout_complete.css">
-    <link rel="stylesheet" type="text/css" href="../css/layouts/checkout_complete.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles/search_results.css">
+    <link rel="stylesheet" type="text/css" href="../css/layouts/search_results.css">
     <script src="../js/index.js"></script>
+    <script src="../js/catalog.js"></script>
 </head>
 
 <body>
-
+    <div class="bg-blanket position-sticky-bg"></div>
     <div class="bg-quad-1 position-sticky-bg"></div>
     <div class="bg-quad-2"></div>
     <div class="bg-quad-3 position-sticky-bg"></div>
-
-
-    <div class="bg-blanket position-sticky-bg"></div>
+    <div class="bg-quad-4"></div>
+    <div class="bg-quad-5"></div>
     <div class="bg-quad-1-responsive position-sticky-bg"></div>
     <div class="bg-quad-2-responsive position-sticky-bg"></div>
+    <div class="bg-quad-3-responsive position-sticky-bg"></div>
+    <div class="bg-quad-4-responsive"></div>
+    <div class="bg-quad-5-responsive"></div>
 
     <img class="logo hover-transition-width position-sticky" src="..\resources\images\icons\logo.png" href="/" onclick="click_redirect(this)">
     <img class="icon icon-burger content-responsive position-sticky-lg" src="..\resources\images\icons\Burger.svg" onclick="show_nav_overlay()"></img>
@@ -43,50 +46,74 @@
         <img class="icon" src="..\resources\images\icons\basket.svg" onclick="show_cart_overlay()"></img>
     </div>
 
-    <div class="bmg-header">
-        <h1>CHECKOUT</h1>
+    <div class="bmg-group-header">
+        <h1 class="bmg-group-name">SEARCH RESULTS</h1>
     </div>
-
-    <div class="checkout-step-monitor-curve">
-        <div id="csm-curve"></div>
-    </div>
-
-    <div class="checkout-step-monitor-steps">
-        <div class="checkout-step-monitor-steps-nc">
-            <div id="csm-step-prev"></div>
-            <div id="csm-step-next"></div>
+    <div class="bmg-search-results">
+        <div class="bmg-search-results-flex">
+            <img class="icon" src="..\resources\images\icons\Search Dark.svg"></img>
+            <p id="bmg-search-string" class="bmg-search-string"></p>
         </div>
-        <div class="checkout-step-monitor-steps-c">
-            <div id="csm-step-current"></div>
-        </div>
+        <a class="bmg-search-results-found"><span id="bmg-search-results-found">0</span> Results found</a>
     </div>
 
-    <div class="checkout-step-monitor-header">
-        <h1>ORDER PLACED</h1>
-    </div>
+    <div class="bmg-products-catalog ">
+        <ul id="bmg-products-catalog-content" class="bmg-products-catalog-content ">
+            <!--<li>
+                <img class="product-image " src="..\resources\images\products\bmg-special-antique-cherry.jpg ">
+                <div class="bmg-product-content ">
+                    <div class="bmg-product-header ">
+                        <h4 class="bmg-product-name ">THE BMG SPECIAL</h4>
+                        <div class="bmg-product-ratings ">
+                            <div id="feature-product-stars " class="bmg-product-stars ">
+                                <object data="..\resources\images\icons\star_primary.svg "></object>
+                                <object data="..\resources\images\icons\star_primary.svg "></object>
+                                <object data="..\resources\images\icons\star_primary.svg "></object>
+                                <object data="..\resources\images\icons\star_primary.svg "></object>
+                                <object data="..\resources\images\icons\star_primary.svg "></object>
+                            </div>
+                            <p class="bmg-product-raters ">(334)</p>
+                        </div>
+                    </div>
+                    <p class="bmg-short-description ">Features superb build quality, awesome playability and an rich diversity of killer tones.</p>
+                    <div class="bmg-product-add-basket ">
+                        <div class="button-group ">
+                            <h1 class="bmg-product-cost "> &euro;2,458</h1>
+                            <div class="bmg-product-limited-stock ">
+                                <object class="info " data="..\resources\images\icons\info_danger.svg "></object>
+                                <p>Limited Stock</p>
+                            </div>
+                            <button type="button " class="btn-primary ">Add to Basket</button>
+                        </div>
+                    </div>
+                </div>
+            </li>-->
 
-    <div class="bmg-order-success">
-        <h1>YOUR GUITARS ARE ON THE WAY!</h1>
-        <p>Order Updates will be regularly e-mailed to you.</p>
-    </div>
-
-    <div class="bmg-contact-us">
-        <h1>CONTACT BMG</h1>
-        <p>For enquiries about pricing, ordering, currency, payment processing, shipping or any technical aspect, please refer to Customer Support</p>
-        <p>If you require further information on any of our products, services or active sales order please contact us by email or telephone.</p>
-        <a>sales@brianmayguitars.co.uk</a>
-        <a>+44 (0) 1276 453 079</a>
-        <a> Mon - Fri &bull; 10:00am - 5:30pm BST</a>
-    </div>
-
-    <div class="bmg-ordered-items">
-        <h1>YOUR ORDER</h1>
-        <ul id="bmg-ordered-items-content" class="bmg-ordered-items-flex">
         </ul>
-        <div class="bmg-ordered-item-grandtotal">
-            <h2>TOTAL: <span id="checkout-complete-grand-total">&euro;2,458</span></h2>
-            <a>TAXES INCLUDED</a>
+    </div>
+
+    <div class="footer ">
+        <p>The House Music Group</p>
+        <p>Decades of Guitar Specialisation</p>
+        <div class="footer-sponsors ">
+            <img src="..\resources\images\footer\house music group ac.png ">
+            <img src="..\resources\images\footer\house music group bc.png ">
+            <img src="..\resources\images\footer\house music group bmg.png ">
         </div>
+        <p>&copy; 2021 Brian May Guitars House Music Ltd. </p>
+    </div>
+
+    <div class="footer-links ">
+        <a href="# ">ARTIST GALLERY</a>
+        <a href="# ">TESTIMONIALS</a>
+        <a href="# ">LATEST NEWS</a>
+        <a href="# ">CONTACT US</a>
+        <a href="# ">SUPPORT</a>
+    </div>
+
+    <div class="scroll scroll-up ">
+        <h1>TOP</h1>
+        <object class="arrow arrow-top " data="..\resources\images\icons\Arrow white.svg "></object>
     </div>
     <div id="nav-overlay" class="nav-overlay">
         <img class="icon icon-close" src="..\resources\images\icons\Previous.svg" onclick="hide_nav_overlay()"></img>
@@ -137,10 +164,15 @@
         </div>
     </div>
 
-    <script>
-        inject_checkout_complete();
-    </script>
+    <div id="text-overlay" class="text-overlay">
+        <img class="icon icon-close" src="..\resources\images\icons\Previous.svg" onclick="hide_text_overlay()"></img>
+        <p id="text"></p>
+    </div>
 
+
+    <script>
+        inject_search_results();
+    </script>
 </body>
 
 </html>

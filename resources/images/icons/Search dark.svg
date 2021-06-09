@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.433" height="20.841" viewBox="0 0 19.433 20.841">
+  <defs>
+    <style>
+
+      .cls-1, .cls-2 {
+        fill: rgba(255, 255, 255, 0);
+        stroke: #824916;
+        stroke-width: 0.8px;
+        stroke-linecap: round;
+      }
+
+      #Search:hover .cls-2{
+        fill: #824916;
+      }
+
+    </style>
+  </defs>
+  <g id="Search" transform="translate(-147.058 -204.393) rotate(45)">
+    <line id="Line_14" data-name="Line 14" class="cls-1" x2="0.094" y2="10.542" transform="translate(263.204 43.883)"/>
+    <g id="Ellipse_8" data-name="Ellipse 8"  transform="translate(252.271 37.482) rotate(-47)">
+      <circle class="cls-1" cx="7.064" cy="7.064" r="6.664"/>
+    </g>
+    <g id="Ellipse_9" data-name="Ellipse 9" transform="translate(255.926 37.354) rotate(-47)">
+      <circle class="cls-2" cx="4.478" cy="4.478" r="4.078"/>
+    </g>
+  </g>
+</svg>

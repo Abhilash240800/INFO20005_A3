@@ -126,7 +126,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 350px;
+    width: 450px;
     margin-top: var(--space-xl);
     margin-bottom: var(--space-xl);
     height: 350px;
@@ -350,7 +350,6 @@ body {
     .checkout-step-monitor-curve,
     .checkout-step-monitor-steps,
     .checkout-step-monitor-header,
-    .bmg-payment,
     .bmg-order-summary {
         z-index: -2;
     }
