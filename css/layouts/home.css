@@ -255,22 +255,11 @@ body {
         grid-column: 12;
         align-self: center;
     }
-    /*Alter After Overlay*/
     .nav {
         display: none;
-        margin-top: var(--space-md);
-        grid-row: 1;
-        grid-column: 1 / 13;
-        justify-self: center;
     }
-    /*Alter After Overlay*/
     .icon-group {
         display: none;
-        margin-top: var(--space-md);
-        margin-right: var(--space-md);
-        grid-row: 1;
-        grid-column: 12;
-        justify-self: right;
     }
     .bmg-hero {
         grid-column: 1/13;

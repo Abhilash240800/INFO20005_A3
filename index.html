@@ -25,7 +25,7 @@
     <div class="bg-quad-5-responsive"></div>
 
     <img class="logo hover-transition-width" src="..\resources\images\icons\logo.png">
-    <object class="icon icon-burger content-responsive" data="..\resources\images\icons\Burger.svg"></object>
+    <img class="icon icon-burger content-responsive" src="..\resources\images\icons\Burger.svg" onclick="show_nav_overlay()"></img>
     <ul class="nav">
         <li>
             <a class="hover-transition-link" href="#">BMG SERIES</a>
@@ -41,8 +41,8 @@
         </li>
     </ul>
     <div class="icon-group">
-        <object class="icon" data="..\resources\images\icons\Search.svg"></object>
-        <object class="icon" data="..\resources\images\icons\basket.svg"></object>
+        <img class="icon" src="..\resources\images\icons\Search.svg"></img>
+        <img class="icon" src="..\resources\images\icons\basket.svg" onclick="show_cart_overlay()"></img>
     </div>
 
     <div class="bmg-hero">
@@ -58,11 +58,11 @@
                 <h3 id="feature-product-name" class="product-name">The BMG ARIELLE</h3>
                 <div class="product-ratings">
                     <div id="feature-product-stars" class="product-stars">
-                        <object data="resources\images\icons\star_primary.svg"></object>
-                        <object data="resources\images\icons\star_primary.svg"></object>
-                        <object data="resources\images\icons\star_primary.svg"></object>
-                        <object data="resources\images\icons\star_primary.svg"></object>
-                        <object data="resources\images\icons\star_primary.svg"></object>
+                        <img src="resources\images\icons\star_primary.svg"></img>
+                        <img src="resources\images\icons\star_primary.svg"></img>
+                        <img src="resources\images\icons\star_primary.svg"></img>
+                        <img src="resources\images\icons\star_primary.svg"></img>
+                        <img src="resources\images\icons\star_primary.svg"></img>
                     </div>
                 </div>
                 <div class="bmg-add-to-basket">
@@ -72,10 +72,10 @@
                     </div>
                 </div>
 
-                <object class="arrow arrow-left" data="resources\images\icons\Arrow.svg"></object>
+                <img class="arrow arrow-left" src="resources\images\icons\Arrow.svg"></img>
                 <p id="feature-product-description" class="product-description"> Features superb build quality, awesome playability and an astonishingly rich diversity of killer tones.</p>
                 <img id="feature-product-image" class="product-image hover-transition-size" src="resources\images\products\BMG Arielle 2021 -  Content 1.jpg">
-                <object class="arrow arrow-right" data="resources\images\icons\Arrow.svg"></object>
+                <img class="arrow arrow-right" src="resources\images\icons\Arrow.svg"></img>
             </li>
         </ul>
     </div>
@@ -150,6 +150,70 @@
         <a href="#">LATEST NEWS</a>
         <a href="#">CONTACT US</a>
         <a href="#">SUPPORT</a>
+    </div>
+
+    <div id="nav-overlay" class="nav-overlay">
+        <img class="icon icon-close" src="..\resources\images\icons\Previous.svg" onclick="hide_nav_overlay()"></img>
+        <img class="icon icon-search" src="..\resources\images\icons\Search.svg"></img>
+        <img class="icon  icon-basket" src="..\resources\images\icons\basket.svg"></img>
+        <ul class="nav-vertical">
+            <li>
+                <a class="hover-transition-link" href="#">BMG SERIES</a>
+            </li>
+            <li>
+                <a class="hover-transition-link" href="#">BMG ACCESSORIES</a>
+            </li>
+            <li>
+                <a class="hover-transition-link" href="#">BMG TOURS</a>
+            </li>
+            <li>
+                <a class="hover-transition-link" href="#">BMG ARIELLE</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="text-overlay" class="text-overlay">
+        <img class="icon icon-close" src="..\resources\images\icons\Previous.svg" onclick="hide_text_overlay()"></img>
+        <p id="text"></p>
+    </div>
+
+    <div id="cart-overlay" class="cart-overlay">
+        <img class="icon icon-close" src="..\resources\images\icons\Previous.svg" onclick="hide_cart_overlay()"></img>
+        <div class="bmg-cart-item">
+            <ul class="bmg-cart-item-flex">
+                <li>
+                    <img class="product-image" src="..\resources\images\products\BMG Special 2020 - Antique Cherry Content 1.jpg ">
+                    <div class="bmg-cart-item-content">
+                        <h1>THE BMG SPECIAL</h1>
+                        <div class="bmg-cart-item-mr-flex">
+                            <div class="bmg-cart-item-quantity">
+                                <p>QTY</p>
+                                <button class="btn-add">+</button>
+                                <a class="bmg-cart-item-amount">1</a>
+                                <button class="btn-remove">&mdash;</button>
+                            </div>
+                            <div class="bmg-cart-item-pricing">
+                                <h2 class="bmg-cart-item-pricing-price-header">PRICE :</h2>
+                                <h2 class="bmg-cart-item-pricing-subtotal-header">SUBTOTAL :</h2>
+                                <h1 class="bmg-cart-item-pricing-price">&euro;2,458</h1>
+                                <h1 class="bmg-cart-item-pricing-subtotal">&euro;2,458</h1>
+                            </div>
+                        </div>
+                        <div class="bmg-product-limited-stock ">
+                            <object class="info " data="..\resources\images\icons\info_danger.svg "></object>
+                            <p>Limited Stock</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="bmg-checkout-cart-summary">
+            <div class="bmg-checkout-cart-summary-flex">
+                <h1>TOTAL: <span>&euro;2,458</span></h1>
+                <a>TAXES INCLUDED</a>
+                <button type="button" class="btn-primary">CHECKOUT</button>
+            </div>
+        </div>
     </div>
 </body>
 
