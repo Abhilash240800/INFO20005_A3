@@ -807,7 +807,11 @@
     .nav-overlay {
         display: none;
     }
-    .cart-overlay,
+    .cart-overlay {
+        width: 400px;
+        left: calc(100% - 380px);
+        background-color: var(--color-primary-bg);
+    }
     .search-overlay {
         width: 400px;
         left: calc(50% - 190px);
